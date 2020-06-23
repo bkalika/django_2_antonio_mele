@@ -29,4 +29,3 @@ def image_create(request):
                   'images/image/create.html',
                   {'section': 'images',
                    'form': form})
-
