@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     'mysite.com',
-    '922f529e8d27.ngrok.io',
+    '66316ebe32b3.ngrok.io',
 ]
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     'social_django',
     'images.apps.ImagesConfig',
+    'sorl.thumbnail',
 
 ]
 
@@ -151,3 +152,5 @@ SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 # Google Consumer Key
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''  # Google Consumer Secret
+
+THUMBNAIL_DEBUG = False
