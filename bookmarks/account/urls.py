@@ -24,4 +24,10 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     # Edit the user profile
     path('edit/', views.edit, name='edit'),
+    # View user list
+    path('users/', views.user_list, name='user_list'),
+    # User follow
+    path('users/follow/', views.user_follow, name='user_follow'),
+    # User detail
+    path('users/<username>/', views.user_detail, name='user_detail'),
 ]
