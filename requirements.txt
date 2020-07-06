@@ -6,3 +6,10 @@ Pillow==7.1.2
 social-auth-app-django==3.4.0
 sorl-thumbnail==12.6.3
 redis==3.5.3
+celery==4.4.6
+flower==0.9.5
+braintree===4.2.0
+WeasyPrint==51
+django-rosetta==0.9.4
+django-parler==2.0.1
+django-localflavor==3.0.1
