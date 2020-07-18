@@ -145,7 +145,7 @@ BRAINTREE_PRIVATE_KEY = '5960ec6f4eb7a430cb34070fd27a2b41'
 
 
 Configuration.configure(
-    Environment.Sandbox,
+    Environment.Sandbox,  # for the prod environment use: Environment.Production
     BRAINTREE_MERCHANT_ID,
     BRAINTREE_PUBLIC_KEY,
     BRAINTREE_PRIVATE_KEY
