@@ -11,6 +11,8 @@ from .forms import ModuleFormSet
 from .models import Course, Module, Content, Subject
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 
+from students.forms import CourseEnrollForm
+
 
 class OwnerMixin(object):
     def get_queryset(self):
@@ -188,3 +190,8 @@ class CourseListView(TemplateResponseMixin, View):
 class CourseDetailView(DetailView):
     model = Course
     template_name = 'courses/course/detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(CourseDetailView, self).get_context_data(**kwargs)
+        context['enroll_form'] = CourseEnrollForm(initial={'course': self.object})
+        return context
