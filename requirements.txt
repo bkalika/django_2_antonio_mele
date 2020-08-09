@@ -14,3 +14,6 @@ django-rosetta==0.9.4
 django-parler==2.0.1
 django-localflavor==3.0.1
 django-braces==1.14.0
+django-embed-video==1.1.2
+python-memcached==1.59
+django-memcache-status==2.2
