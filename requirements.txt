@@ -6,7 +6,7 @@ Pillow==7.1.2
 social-auth-app-django==3.4.0
 sorl-thumbnail==12.6.3
 redis==3.5.3
-celery==4.4.6
+celery==5.2.2
 flower==0.9.5
 braintree===4.2.0
 WeasyPrint==51
